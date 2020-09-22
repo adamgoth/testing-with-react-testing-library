@@ -6,11 +6,6 @@ import ToDo from './ToDo'
 const setup = () => render(<ToDo />)
 
 describe('<ToDo/>', () => {
-  it('Renders without crashing', () => {
-    const { getByRole } = setup()
-    expect(getByRole('heading')).toBeInTheDocument()
-  })
-
   describe('The default UI', () => {
     it('Renders two default todo items', () => {
       const { getAllByRole } = setup()
